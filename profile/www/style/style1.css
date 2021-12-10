@@ -1,0 +1,132 @@
+body {
+    font-family: 'Rubik';
+}
+
+
+/*Change Text Selection Color*/
+
+ ::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: #20a39e 108%;
+}
+
+ ::selection {
+    color: white;
+    background: #20a39e 108%;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(#f48ced 2%, #20a39e 108%);
+    /*gradient of 2 colors, change to whatever you want*/
+    min-height: 100vh;
+    text-align: center;
+}
+
+a.featured:hover,
+a:hover {
+    background-color: #20a39e;
+    color: #fff
+}
+
+.logo {
+    /* làm logo bo tròn */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 5px solid rgb(255, 108, 243);
+    background-color: #fff;
+    background-image: url(https://i.imgur.com/QQfXQQf.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: white;
+}
+
+.header-text {
+    color: white;
+}
+
+.buttons {
+    margin-top: 3%;
+}
+
+a {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 15px;
+    padding: 15px 20px;
+    font-size: .85rem;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: all .2s ease-in-out
+}
+
+a.featured {
+    position: relative;
+    background-color: #fff;
+    color: #f48ced;
+    font-weight: 700
+}
+
+a.featured:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #f48ced
+}
+
+h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%
+}
+
+*,
+ :after,
+ :before {
+    box-sizing: inherit
+}
+
+.content {
+    margin-top: 15%;
+}
+
+.channels {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: bottom;
+}
+
+.channels a {
+    flex: 1;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #ffffff00;
+    border: none
+}
+
+.channels a:last-child {
+    margin-right: 0
+}
+
+.channels a:hover {
+    text-decoration: underline
+}
